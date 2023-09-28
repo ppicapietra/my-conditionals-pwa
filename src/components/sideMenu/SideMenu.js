@@ -30,12 +30,12 @@ function SideMenu( props ) {
 
 	return (
 		<div className={`side-menu ${ props.isOpen ? 'open' : '' }`}>
-			
+
 			<div className="menu-header">
-                <button onClick={props.toggleMenu} className="close-button">
-                    <FontAwesomeIcon icon={faTimes} />
-                </button>
-            </div>
+				<button onClick={props.toggleMenu} className="close-button">
+					<FontAwesomeIcon icon={faTimes} />
+				</button>
+			</div>
 
 			<div className="menu-item">
 				<div className="icon-container">
@@ -54,7 +54,7 @@ function SideMenu( props ) {
 			)}
 
 
-			{!deferredPrompt && (
+			{deferredPrompt && (
 				<div className="menu-item" onClick={promptInstall}>
 					<div className="icon-container">
 						<FontAwesomeIcon icon={faDownload} style={{ color: '#2ecc71' }} />

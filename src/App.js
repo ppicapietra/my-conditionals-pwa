@@ -25,12 +25,13 @@ function App() {
 
 	useEffect( () => {
 		const handleEvent = ( e ) => {
-			// Evita que Chrome muestre el aviso
 			e.preventDefault();
-			// Guarda el evento para usarlo más tarde
 			setDeferredPrompt( e );
 		}
 		window.addEventListener( 'beforeinstallprompt', handleEvent );
+		window.addEventListener('appinstalled', (evt) => {
+			setDeferredPrompt(null);
+		});
 
 		return () => {
 			window.removeEventListener( 'beforeinstallprompt', handleEvent );
