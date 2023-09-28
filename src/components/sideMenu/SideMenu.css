@@ -43,7 +43,7 @@
 
 .menu-item a, .menu-item span {
 	text-decoration: none;
-	color: inherit; /* Use the parent's color */
+	color: inherit;
 	margin-left: 10px;
   font-weight: 500;
 }

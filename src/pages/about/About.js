@@ -9,7 +9,7 @@ function About() {
 			<main className="about-container">
 				<div className="about-content">
 					<p>This application was created by Pablo Picapietra, with assistance from Mariela Fernanda Moreno Pazos.</p>
-					<p>Check out the code on <a href="https://github.com/ppicapietra/my-conditionals-pwa" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+					<p><a href="https://github.com/ppicapietra/my-conditionals-pwa" target="_blank" rel="noopener noreferrer">See in GitHub</a></p>
 				</div>
 			</main>
 		</div>
