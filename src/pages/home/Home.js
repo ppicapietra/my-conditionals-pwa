@@ -74,7 +74,7 @@ function Home() {
       apodosis: CONDITIONAL_TENSE,
       type: CONDITIONAL_NAME_MIX,
       meaning: "Something in the past that we cannot change, but  it would have affected the present",
-      example: ""
+      example: "If you had not come from India, they would treat you nicely"
     },
     "past/future": {
       needContext: false,
@@ -82,7 +82,7 @@ function Home() {
       apodosis: CONDITIONAL_TENSE + FUTURE_TIME_MARKER_TENSE,
       type: CONDITIONAL_NAME_MIX,
       meaning: "Something in the past that we cannot change, but it would have affected our future",
-      example: ""
+      example: "If you hadn't slapped the lady, you would not be going to jail tomorrow"
     },
     "present/past": {
       needContext: false,
@@ -90,7 +90,7 @@ function Home() {
       apodosis: CONDITIONAL_PERFECT_TENSE,
       type: CONDITIONAL_NAME_MIX,
       meaning: "Something that we would have done different if the present were different",
-      example: ""
+      example: "If my parents weren't coming back home today, I would have let you stay at my place for some days"
     },
     "present/present": {
       needContext: true,
@@ -101,15 +101,15 @@ function Home() {
       apodosis: PRESENT_TENSE,
       type: CONDITIONAL_NAME_0,
       meaning: "General truths or results that always happen if a condition is present, not about one particular situation",
-      example: ""
+      example: "If water reaches 100 degrees, it boils"
     },
     "present/present/unreal": {
       needContext: true,
       protasis: PAST_SIMPLE_TENSE,
       apodosis: CONDITIONAL_TENSE,
       type: CONDITIONAL_NAME_2,
-      meaning: "Imaginary situations in the present affecting the present			",
-      example: ""
+      meaning: "Imaginary situations in the present affecting the present",
+      example: "If I studied more, I would pass the exam"
     },
     "present/future": {
       needContext: false,
@@ -117,7 +117,7 @@ function Home() {
       apodosis: CONDITIONAL_TENSE + FUTURE_TIME_MARKER_TENSE,
       type: CONDITIONAL_NAME_MIX,
       meaning: "Something that we would do different if the present were different",
-      example: ""
+      example: "If I had a lot of money, I wouldn't be going to Dubai next week"
     },
     "future/past": {
       needContext: false,
@@ -125,7 +125,7 @@ function Home() {
       apodosis: CONDITIONAL_PERFECT_TENSE,
       type: CONDITIONAL_NAME_MIX,
       meaning: "Something that will happen in the future that, if I've known in the past, things would have been different ",
-      example: ""
+      example: "If my mother wasn't buying one tomorrow, I would have brought that stray dog"
     },
     "future/present": {
       needContext: false,
@@ -133,7 +133,7 @@ function Home() {
       apodosis: CONDITIONAL_TENSE,
       type: CONDITIONAL_NAME_MIX,
       meaning: "Complete with something",
-      example: ""
+      example: "If she didn't have an exam tomorrow, she would be sleeping right now"
     },
     "future/future": {
       needContext: false,
@@ -141,7 +141,7 @@ function Home() {
       apodosis: FUTURE_TENSE,
       type: CONDITIONAL_NAME_1,
       meaning: "Future consequence of a realistic possibility now or in the future",
-      example: ""
+      example: "If I prepare the exam, I will pass the exam"
     },
   }
 
@@ -265,7 +265,7 @@ function Home() {
                 <FontAwesomeIcon
                   icon={faVolumeUp}
                   className="text-to-speach-icon"
-                  onClick={()=>textToSpeach('exampleContainer')}
+                  onClick={() => textToSpeach( 'exampleContainer' )}
                 />
                 <p id='exampleContainer'>{conditionalClause.example}</p>
               </>
