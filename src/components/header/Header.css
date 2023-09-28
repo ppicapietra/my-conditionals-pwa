@@ -1,0 +1,33 @@
+.App-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #282c34;
+  min-height: 3vh;
+  max-height: 4vh;
+  /* flex-direction: column; */
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 10px 0;
+  position: relative;
+}
+
+.Menu-icon {
+  cursor: pointer;
+  margin-right: 20px;
+	margin-left: auto;
+}
+
+.App-logo {
+  height: 1.3em;
+  pointer-events: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: heartbeat infinite 6s ease;
+  }
+}

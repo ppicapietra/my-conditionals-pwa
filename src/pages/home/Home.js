@@ -1,10 +1,9 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import logo from '../../assets/images/logo256.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faVolumeUp } from '@fortawesome/free-solid-svg-icons';
-
 import './Home.css';
+import Header from '../../components/header/Header';
 
 function Home() {
 
@@ -187,9 +186,7 @@ function Home() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
+      <Header />
       <main>
         <div className='filtersBar'>
 
