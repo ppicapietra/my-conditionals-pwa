@@ -1,6 +1,6 @@
 # My Conditionals App
 
-![App Logo](./path-to-your-logo.png) <!-- Replace 'path-to-your-logo.png' with the path to your logo if you have one -->
+![App Logo](./public/images/logo128.png)
 
 My Conditionals is a progressive web application (PWA) designed to improve the comprehension and use of conditionals in the English language.
 
