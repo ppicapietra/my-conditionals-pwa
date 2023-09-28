@@ -1,22 +1,19 @@
 {
-    "id": "com.ppicapietra.myconditionals",
-    "version": "1.0.0",
     "name": "My conditionals",
     "short_name": "MyConditionals",
     "description": "A tool to improve the comprehension and use of conditionals.",
     "category": ["productivity","utilities"],
     "lang": "en-US",
     "dir": "ltr",
-    "start_url": "index.html",
-    "scope": ["https://grupopietra.com/tools/my-conditionals/", "https://vercel.com/"],
+    "start_url": "/",
+    "scope": "/",
     "display": "standalone",
-    "orientation": "portrait",
     "background_color": "#007BFF",
     "theme_color": "#007BFF",
     "screenshots": [{
         "src": "images/screenshot-1.jpg",
         "sizes": "1080x2034",
-        "platform": "narrow",
+        "form_factor": "narrow",
         "label": "Learn what conditional form to use"
       }],
     "icons": [
