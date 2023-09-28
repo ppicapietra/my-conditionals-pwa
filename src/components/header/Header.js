@@ -8,10 +8,14 @@ import './Header.css';
 
 const Header = ( { onMenuClick } ) => {
 
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [ isMenuOpen, setIsMenuOpen ] = useState( false );
 
     const handleMenuClick = () => {
-        setIsMenuOpen(!isMenuOpen);
+        setIsMenuOpen( !isMenuOpen );
+    };
+
+    const toggleMenu = () => {
+        setIsMenuOpen( !isMenuOpen );
     };
 
     return (
@@ -20,7 +24,7 @@ const Header = ( { onMenuClick } ) => {
                 <img src={logo} className="App-logo" alt="logo" />
                 <FontAwesomeIcon icon={faBars} className="Menu-icon" onClick={handleMenuClick} />
             </header>
-            <SideMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
+            <SideMenu isOpen={isMenuOpen} toggleMenu={toggleMenu} />
         </>
     );
 };

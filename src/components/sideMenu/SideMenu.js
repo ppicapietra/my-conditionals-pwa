@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faShareAlt, faInfoCircle, faDownload } from '@fortawesome/free-solid-svg-icons';
+import { faTimes, faHome, faShareAlt, faInfoCircle, faDownload } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import AppContext from '../../model/AppContext';
 import './SideMenu.css';
@@ -30,6 +30,13 @@ function SideMenu( props ) {
 
 	return (
 		<div className={`side-menu ${ props.isOpen ? 'open' : '' }`}>
+			
+			<div className="menu-header">
+                <button onClick={props.toggleMenu} className="close-button">
+                    <FontAwesomeIcon icon={faTimes} />
+                </button>
+            </div>
+
 			<div className="menu-item">
 				<div className="icon-container">
 					<FontAwesomeIcon icon={faHome} style={{ color: '#3498db' }} />
