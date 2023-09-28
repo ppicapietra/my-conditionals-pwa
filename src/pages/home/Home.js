@@ -248,8 +248,8 @@ function Home() {
           <fieldset>
             <legend>Form</legend>
             {conditionalClause && conditionalClause.apodosis && conditionalClause.protasis ? (
-              <p>if <strong>{conditionalClause.apodosis}</strong><br />
-                then <strong>{conditionalClause.protasis}</strong></p>
+              <p>if <strong>{conditionalClause.protasis}</strong><br />
+                then <strong>{conditionalClause.apodosis}</strong></p>
             ) :
               ( "Waiting for selection...." )}
           </fieldset>
