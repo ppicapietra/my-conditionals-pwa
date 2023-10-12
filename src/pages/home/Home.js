@@ -173,7 +173,14 @@ function Home() {
   const textToSpeach = function ( elementId ) {
     try {
       const text = document.getElementById( elementId ).textContent;
+      // Find the first English-speaking voice
+      const voices = window.speechSynthesis.getVoices();
+      const englishVoice = voices.find( voice => voice.lang.startsWith( 'en' ) );
       const utterance = new SpeechSynthesisUtterance( text );
+      if ( englishVoice ) {
+        utterance.voice = englishVoice;
+      }
+
       window.speechSynthesis.speak( utterance );
     } catch ( error ) {
       console.error( error );
