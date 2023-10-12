@@ -4,6 +4,8 @@ import AppContext from './model/AppContext';
 import Home from './pages/home/Home';
 import About from './pages/about/About';
 
+const APP_VERSION = "1.1.0";
+
 function App() {
 
 	const [ deferredPrompt, setDeferredPrompt ] = useState( null );
@@ -13,9 +15,9 @@ function App() {
 			deferredPrompt.prompt();
 			deferredPrompt.userChoice.then( ( choiceResult ) => {
 				if ( choiceResult.outcome === 'accepted' ) {
-					console.log( 'User accepted the install prompt' );
+					console.info( 'User accepted the install prompt' );
 				} else {
-					console.log( 'User dismissed the install prompt' );
+					console.info( 'User dismissed the install prompt' );
 				}
 				setDeferredPrompt( null );
 			} );
@@ -40,7 +42,7 @@ function App() {
 
 
 	return (
-		<AppContext.Provider value={{ deferredPrompt, promptInstall }}>
+		<AppContext.Provider value={{ deferredPrompt, promptInstall, appVersion: APP_VERSION }}>
 			<Router>
 				<Routes>
 					<Route path="/" element={<Home />} />

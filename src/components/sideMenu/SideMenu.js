@@ -7,7 +7,7 @@ import './SideMenu.css';
 
 function SideMenu( props ) {
 
-	const { deferredPrompt, promptInstall } = useContext( AppContext );
+	const { deferredPrompt, promptInstall, appVersion } = useContext( AppContext );
 
 	const isWebShareAPIAvailable = () => {
 		return !!navigator.share;
@@ -69,6 +69,8 @@ function SideMenu( props ) {
 				</div>
 				<Link to="/about">About</Link>
 			</div>
+
+			<p className='menu-app-version'>v{appVersion}</p>
 		</div>
 	);
 }
