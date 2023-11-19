@@ -4,7 +4,7 @@ import AppContext from './model/AppContext';
 import Home from './pages/home/Home';
 import About from './pages/about/About';
 
-const APP_VERSION = "1.1.0";
+const APP_VERSION = process.env.REACT_APP_VERSION;
 
 function App() {
 

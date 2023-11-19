@@ -11,7 +11,7 @@ function About() {
 		<div className="App">
 			<Header />
 			<main className="about-container">
-				<p className='about-text'>This application was developed by Pablo Picapietra, with assistance from the excellent English teacher Mariela Fernanda Moreno Pazos.</p>
+				<p className='about-text'>This application was developed by Pablo Picapietra, with translation assistance from the excellent English teacher Mariela Fernanda Moreno Pazos.</p>
 				<div className='about-links'>
 					<p><a href="https://github.com/ppicapietra/my-conditionals-pwa" target="_blank" rel="noopener noreferrer">See in GitHub</a></p>
 				</div>
